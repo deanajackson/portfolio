@@ -1,0 +1,19 @@
+/*
+File Name: style.css
+Date: 5/19/2023
+Programmer: Deana Jackson
+*/
+
+/* My color palette from */
+
+/* Global Styling*/
+
+/* MOBILE STYLESHEET */
+@media only screen and (min-width: 200px) {
+}
+/* TABLET STYLESHEET:The following CSS affects all screen sizes larger than 480 pixels wide.*/
+@media only screen and (min-width: 481px) {
+}
+/* DESKTOP STYLESHEET: The following CSS affects all screen sizes larger than 1024 pixels wide.*/
+@media only screen and (min-width: 1025px) {
+}
