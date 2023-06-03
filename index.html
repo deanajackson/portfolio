@@ -21,10 +21,113 @@
       rel="stylesheet"
     />
     <!-- Manual Stylesheets-->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!--<link rel="stylesheet" href="reset.css" />-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lekton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav class="navbar navbar-default" id="navbar-override">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Deana Jackson</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+    <main>
+      <img src="deana.jpg" />
+      <div class="even-content" id="about">
+        <h2>About Me</h2>
+        <p>
+          As a creative and results-focused industry professional, my goal is to
+          develop the highest-quality and most engaging digital education
+          products and experiences possible. I have over seven years’ experience
+          as a language educator, four as a curriculum and materials designer,
+          two as an online language program coordinator, and one as a WordPress
+          developer. My education in software development makes me a key liaison
+          between curriculum and tech teams, a gap that desperately needs to be
+          filled as education takes place more and more online. Have a look at
+          the work I’ve done in the past, and get in touch to learn more.
+        </p>
+      </div>
+      <div class="odd-content" id="resume">
+        <h2>Resume</h2>
+        <h3>Learning Analyst</h3>
+        <h4>August 2022 - Present | WeLocalize</h4>
+        <ul>
+          <li>PowerBi, data modeling, report building</li>
+          <li>Cornerstone LMS</li>
+          <li>
+            Developing training programs for large clients, enrolling several
+            thousand users per month
+          </li>
+        </ul>
+
+        <h3>Curriculum Specialist</h3>
+        <h4>January 2019 - August 2022 | Open Education</h4>
+        <ul>
+          <li>Curriculum development and planning</li>
+          <li>Managed group of content developers</li>
+          <li>Designed activities for app using Figma</li>
+        </ul>
+      </div>
+      <div class="even-content" id="projects">
+        <h2>Projects</h2>
+        <img />
+        <h3>Portland ESL Network Website</h3>
+        <p>Volunteer website development, using WordPress</p>
+      </div>
+      <div class="odd-content" id="contact">
+        <form action="/submit">
+          <div>
+            <label for="name">Name:</label>
+            <br />
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <br />
+            <input type="email" id="email" name="email" />
+          </div>
+          <div>
+            <label for="name">Message:</label>
+            <br />
+            <input type="text" id="message" name="message" />
+          </div>
+
+          <input class="grid-item" type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+    <footer></footer>
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 /*
-File Name: style.css
+File Name: styles.css
 Date: 5/19/2023
 Programmer: Deana Jackson
 */
@@ -7,6 +7,29 @@ Programmer: Deana Jackson
 /* My color palette from */
 
 /* Global Styling*/
+body {
+  background-color: #dc9750;
+  font-family: "Lekton", sans-serif;
+}
+/*.content {
+ 
+}*/
+.even-content {
+  width: 75%;
+  padding: 2em;
+  margin: 2em auto;
+  border-radius: 20px;
+  background-color: #f3eac0;
+  color: #1e2640;
+}
+.odd-content {
+  width: 75%;
+  padding: 2em;
+  margin: 2em auto;
+  border-radius: 20px;
+  background-color: #1e2640;
+  color: #f3eac0;
+}
 
 /* MOBILE STYLESHEET */
 @media only screen and (min-width: 200px) {
