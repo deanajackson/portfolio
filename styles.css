@@ -4,35 +4,119 @@ Date: 5/19/2023
 Programmer: Deana Jackson
 */
 
-/* My color palette from */
+/* My color palette from https://www.canva.com/colors/color-palettes/middle-eastern-empire/*/
 
 /* Global Styling*/
+h1,
+h2,
+h3,
+h4 {
+  margin: 10px;
+}
+.container-fluid {
+  background-color: #922c40;
+  position: fixed;
+  width: 100%;
+}
+.navbar {
+  margin-bottom: 0;
+}
+nav .navbar-header .navbar-brand {
+  font-family: "Lekton", sans-serif;
+  font-size: 1.7em;
+  color: #f3eac0;
+}
+.navbar-default .navbar-brand {
+  color: #f3eac0 !important;
+}
+.navbar-brand :hover {
+  color: #f3eac0;
+}
+nav .navbar-collapse {
+  background-color: #922c40;
+  box-shadow: 0px 2px #f3eac0;
+}
+nav .navbar-collapse .navbar-nav {
+  background-color: #922c40;
+  text-align: center;
+}
+nav .navbar-collapse .navbar-nav li a {
+  font-family: "Lekton", sans-serif;
+  color: #f3eac0 !important;
+}
+nav .navbar-collapse .navbar-nav li a:link {
+  text-decoration: none;
+}
+nav .navbar-collapse .navbar-nav li a:visited {
+  text-decoration: none;
+}
+nav .navbar-collapse .navbar-nav li a:hover {
+  text-decoration: none;
+  background-color: #760d2a;
+}
 body {
   background-color: #dc9750;
   font-family: "Lekton", sans-serif;
 }
-/*.content {
- 
-}*/
+#profile-pic {
+  display: block;
+  margin: 2em auto;
+  border: 1px solid;
+  border-color: #922c40;
+  border-radius: 100px;
+  width: 200px;
+  box-shadow: 2px 2px #922c40;
+}
 .even-content {
   width: 75%;
-  padding: 2em;
+  padding: 1em;
   margin: 2em auto;
   border-radius: 20px;
+  border: 1px solid;
+  border-color: #1e2640;
   background-color: #f3eac0;
   color: #1e2640;
+  box-shadow: 3px 6px #1e2640;
 }
 .odd-content {
   width: 75%;
-  padding: 2em;
+  padding: 1em;
   margin: 2em auto;
+  border: 1px solid;
+  border-color: #f3eac0;
   border-radius: 20px;
   background-color: #1e2640;
   color: #f3eac0;
+  box-shadow: 3px 6px #f3eac0;
+}
+.even-content p,
+h3,
+h4,
+ul,
+li,
+.odd-content p,
+h3,
+h4,
+ul,
+li {
+  padding-left: 1.2em;
+}
+
+footer {
+  background-color: #922c40;
+  color: #f3eac0;
+  padding: 0.5em;
+  text-align: center;
 }
 
 /* MOBILE STYLESHEET */
 @media only screen and (min-width: 200px) {
+  img {
+    display: block;
+    margin: 2em auto;
+    border-radius: 100px;
+    width: 200px;
+  }
 }
 /* TABLET STYLESHEET:The following CSS affects all screen sizes larger than 480 pixels wide.*/
 @media only screen and (min-width: 481px) {
