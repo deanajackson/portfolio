@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Deana Jackson</title>
     <meta name="author" content="Deana Jackson" />
@@ -64,7 +62,7 @@
             <li><a href="#profile-pic">About</a></li>
             <li><a href="#about">Resume</a></li>
             <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact-form">Contact</a></li>
           </ul>
         </div>
         <!--/.nav-collapse -->
@@ -72,20 +70,23 @@
       <!--/.container-fluid -->
     </nav>
     <main>
-      <img id="profile-pic" src="deana.jpg" alt="Profile picture of Deana" />
-      <div class="even-content" id="about">
-        <h2>About Me</h2>
-        <p>
-          As a creative and results-focused industry professional, my goal is to
-          develop the highest-quality and most engaging digital education
-          products and experiences possible. I have over seven years’ experience
-          as a language educator, four as a curriculum and materials designer,
-          two as an online language program coordinator, and one as a WordPress
-          developer. My education in software development makes me a key liaison
-          between curriculum and tech teams, a gap that desperately needs to be
-          filled as education takes place more and more online. Have a look at
-          the work I’ve done in the past, and get in touch to learn more.
-        </p>
+      <div id="top-grid">
+        <img id="profile-pic" src="deana.jpg" alt="Profile picture of Deana" />
+        <div class="even-content" id="about">
+          <h1>About Me</h1>
+          <p>
+            As a creative and results-focused industry professional, my goal is
+            to develop the highest-quality and most engaging digital education
+            products and experiences possible. I have over seven years’
+            experience as a language educator, four as a curriculum and
+            materials designer, two as an online language program coordinator,
+            and one as a WordPress developer. My education in software
+            development makes me a key liaison between curriculum and tech
+            teams, a gap that desperately needs to be filled as education takes
+            place more and more online. Have a look at the work I’ve done in the
+            past, and get in touch to learn more.
+          </p>
+        </div>
       </div>
       <div class="odd-content" id="resume">
         <h2>Resume</h2>
@@ -110,34 +111,50 @@
       </div>
       <div class="even-content" id="projects">
         <h2>Projects</h2>
-        <button onclick="PENGenerate()">Portland ESL Network Website</button>
-        <button onclick="GermanGenerate()">Level Up German Website</button>
-        <button onclick="MacawGenerate()">Hyacinth Macaw Website</button>
+        <p class="info">Click to learn more about each.</p>
+        <button onclick="PENGenerate()" class="customButtons">
+          Portland ESL Network Website
+        </button>
+        <button onclick="GermanGenerate()" class="customButtons">
+          Level Up German Website
+        </button>
+        <button onclick="MacawGenerate()" class="customButtons">
+          Hyacinth Macaw Website
+        </button>
         <div id="projectContainer"></div>
       </div>
 
       <div class="odd-content" id="contact-form">
-        <form action="/submit">
-          <div>
-            <label for="name">Name:</label>
+        <h2>Get in Touch</h2>
+        <div id="bottom-grid">
+          <form>
+            <div>
+              <label for="name">Name:</label>
+              <br />
+              <input class="input-text" type="text" id="name" name="name" />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <br />
+              <input class="input-text" type="email" id="email" name="email" />
+            </div>
+            <div>
+              <label for="message">Message:</label>
+              <br />
+              <textarea
+                class="input-text"
+                id="message"
+                name="message"
+              ></textarea>
+            </div>
             <br />
-            <input type="text" id="name" name="name" />
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <br />
-            <input type="email" id="email" name="email" />
-          </div>
-          <div>
-            <label for="message">Message:</label>
-            <br />
-            <input type="text" id="message" name="message" />
-          </div>
-
-          <input class="grid-item" type="submit" value="Submit" />
-        </form>
+            <input class="submitButton" type="submit" value="Submit" />
+          </form>
+          <img id="initials" src="DJ.png" alt="Stylized Initials DJ" />
+        </div>
       </div>
     </main>
+
     <footer><p>Developed and Designed by Deana Jackson</p></footer>
     <script src="projectGeneration.js"></script>
     <script src="form.js"></script>
