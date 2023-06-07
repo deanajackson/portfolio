@@ -54,7 +54,8 @@ function GermanGenerate() {
   projectPic.src = "levelupgerman.png";
   projectPic.alt = "Screenshot of the Level Up German Website Homepage";
   title.textContent = "Level Up German";
-  subtitle.textContent = "Volunteer website development using WordPress";
+  subtitle.textContent =
+    "Final project for a former web development course. Test your German level!";
   githubButton.className = "customButtons";
   ghAnchor.href = "https://github.com/deanajackson/germansite";
   ghAnchor.textContent = "GitHub Repo";
