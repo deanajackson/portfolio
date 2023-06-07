@@ -158,6 +158,9 @@ footer {
   .customButtons {
     margin: 5px;
   }
+  #initials {
+    display: none;
+  }
 }
 /* TABLET STYLESHEET:The following CSS affects all screen sizes larger than 480 pixels wide.*/
 @media only screen and (min-width: 481px) {
@@ -166,11 +169,9 @@ footer {
     margin: 2em auto;
     width: 300px;
   }
-  #initials {
-    display: none;
-  }
 }
 /* DESKTOP STYLESHEET: The following CSS affects all screen sizes larger than 1024 pixels wide.*/
+
 @media only screen and (min-width: 1025px) {
   #projects p,
   #projects h3 {
